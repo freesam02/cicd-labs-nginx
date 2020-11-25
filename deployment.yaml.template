@@ -1,0 +1,9 @@
+serviceName: '13-124-149-166' # 자신의 서비스 이름으로 바꿔주세요
+containers:
+  nginx:
+    image: 'freesam02/lightsail-nginx:v1' # 바꿔주세요
+    ports:
+      '80': 'HTTP'
+publicEndpoint:
+  containerName: 'nginx'
+  containerPort: 80
